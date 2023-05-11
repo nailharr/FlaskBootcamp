@@ -6,7 +6,7 @@
     <title>Peoples</title>
 </head>
 <body>
-<table border="1" cellspacing="">
+<table border="1" cellspacing="0">
     <tr>
         <th width = "20%">LastName</th>
         <th width = "20%">Name</th>
@@ -15,12 +15,38 @@
         <th width = "15%">PersonalNumber</th>
         <th width = "10%">Rating</th>
     </tr>
-    <tr>
 
-    </tr>
+        {% for row in data %}
+            <tr>
+                <td>
+                    {{ row[0] }}
+                </td>
+                <td>
+                    {{ row[1] }}
+                </td>
+                <td>
+                    {{ row[2] }}
+                </td>
+                <td>
+                    {{ row[3] }}
+                </td>
+                <td>
+                    {{ row[4] }}
+                </td>
+                <td>
+                    {{ row[5] }}
+                </td>
+            </tr>
+
+        {% endfor %}
+
 </table>
 <br>
-<a href="/">To main page</a>
+<button type="button">
+    <a href="/">To main page</a>
+</button>
+
 {% endblock %}
+
 </body>
 </html>
