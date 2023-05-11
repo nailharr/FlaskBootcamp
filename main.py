@@ -20,7 +20,6 @@ def plus(x, y):
 @app.route('/table')
 def table():
     with open("files_in/peoples_data.csv", "r", encoding="utf8") as file:
-
         people_data = list()
         for line in file.readlines():
             people_data.append(tuple(line.split('\n')[0].split(',')))
@@ -28,6 +27,7 @@ def table():
         print(people_data)
 
     return render_template("table_peoples.html", data=people_data)
+
 
 if __name__ == '__main__':
     app.run()
