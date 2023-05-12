@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from flask import render_template, flash, redirect, request, url_for
 
 app = Flask(__name__)
 
@@ -24,7 +25,7 @@ def table():
         for line in file.readlines():
             people_data.append(tuple(line.split('\n')[0].split(',')))
 
-        print(people_data)
+        # print(people_data)
 
     return render_template("table_peoples.html", data=people_data)
 
