@@ -7,14 +7,14 @@ body, a {
     font-size: 18px;
 }
 a {
-    color: #eee;
+
     text-decoration: none;
 }
 a :hover {
     color: red;
 }
 h1 {
-    color: #ff0000;
+    color: #0090ff;
 }
 td, th {
     padding: 0.3em 0.3em;
@@ -26,8 +26,8 @@ button {
     min-width: 120px;
     min-height: 30px;
     padding: 12px;
-    background-color: rgba(0, 200, 255, 0.3)
+    background-color: rgba(140, 180, 90, 1)
 }
 button :hover {
-    color: #000;
+    color: #eee;
 }
